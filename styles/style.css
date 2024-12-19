@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
 
+
 :root{
     --cor-primaria: #2E073F;
     --cor-secundaria: #000000;
@@ -27,6 +28,7 @@ body{
 }
 .cabecalho{
     padding: 2% 0% 0% 15%;
+    align-items: center;
 
 }
 .cabecalho__menu{
@@ -109,4 +111,24 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-size: 24px;
     font-weight: 400;
+}
+
+
+@media (max-width: 1200px) {
+    .cabecalho {
+        padding: 10%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    
+        .apresentacao__conteudo {
+            width: auto;
+        }
+    }
 }
